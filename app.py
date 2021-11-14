@@ -2,6 +2,9 @@ from flask import Flask, app,render_template,url_for,request
 import re
 import nltk
 import heapq
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 
 contraction_mapping = {"ain't": "is not", "aren't": "are not","can't": "cannot", "'cause": "because", "could've": "could have", "couldn't": "could not",
 
